@@ -4,11 +4,27 @@
  */
 package mx.itson.carrito.entidades;
 
+import mx.itson.carrito.enums.TipoMotor;
+
 /**
  *
  * @author ABCDE-SONY
  */
 public class Carro {
+
+    /**
+     * @return the tipoMotor
+     */
+    public TipoMotor getTipoMotor() {
+        return tipoMotor;
+    }
+
+    /**
+     * @param tipoMotor the tipoMotor to set
+     */
+    public void setTipoMotor(TipoMotor tipoMotor) {
+        this.tipoMotor = tipoMotor;
+    }
 
     /**
      * @return the killometraje
@@ -69,6 +85,7 @@ public class Carro {
     private int anio;
     private String marca;
     private double killometraje;
+    private TipoMotor tipoMotor;
     
     //t=d/v
     /**
