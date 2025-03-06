@@ -4,6 +4,7 @@
  */
 package mx.itson.carrito.entidades;
 
+import mx.itson.carrito.enums.TipoColor;
 import mx.itson.carrito.enums.TipoMotor;
 
 /**
@@ -11,6 +12,20 @@ import mx.itson.carrito.enums.TipoMotor;
  * @author ABCDE-SONY
  */
 public class Carro {
+
+    /**
+     * @return the topoColor
+     */
+    public TipoColor getTopoColor() {
+        return topoColor;
+    }
+
+    /**
+     * @param topoColor the topoColor to set
+     */
+    public void setTopoColor(TipoColor topoColor) {
+        this.topoColor = topoColor;
+    }
 
     /**
      * @return the tipoMotor
@@ -86,6 +101,7 @@ public class Carro {
     private String marca;
     private double killometraje;
     private TipoMotor tipoMotor;
+    private TipoColor topoColor;
     
     //t=d/v
     /**
