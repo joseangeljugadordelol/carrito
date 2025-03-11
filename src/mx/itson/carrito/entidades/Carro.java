@@ -6,12 +6,42 @@ package mx.itson.carrito.entidades;
 
 import mx.itson.carrito.enums.TipoColor;
 import mx.itson.carrito.enums.TipoMotor;
+import mx.itson.carrito.entidades.Propietario;
+import mx.itson.carrito.entidades.Esterio;
 
 /**
  *
  * @author ABCDE-SONY
  */
 public class Carro {
+
+    /**
+     * @return the esterio
+     */
+    public Esterio getEsterio() {
+        return esterio;
+    }
+
+    /**
+     * @param esterio the esterio to set
+     */
+    public void setEsterio(Esterio esterio) {
+        this.esterio = esterio;
+    }
+
+    /**
+     * @return the propietario
+     */
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
+    }
 
     /**
      * @return the topoColor
@@ -102,6 +132,9 @@ public class Carro {
     private double killometraje;
     private TipoMotor tipoMotor;
     private TipoColor topoColor;
+    
+    private Propietario propietario;
+    private Esterio esterio;
     
     //t=d/v
     /**
